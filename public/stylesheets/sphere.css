@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir Next', Helvetica;
+}
+
+center {
+    margin-top: -65vh;
+    z-index: 100;
+    font-size: 5em;
+    color: #262626;
+    position: absolute;
+    text-align: left;
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+canvas {
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    center {
+        font-size: 8em;
+    }
+}

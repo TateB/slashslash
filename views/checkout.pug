@@ -1,0 +1,55 @@
+extends header
+
+block content
+    link(rel='stylesheet', type='text/css', href='/stylesheets/checkout.css')
+    div(id='mainco')
+        div(id='left')
+            form(action='/charge', method='post', id='payment-form')
+                div(class='field')
+                    label(for="name") Name
+                    input(type="text", id='name', class='input', placeholder='John Doe', required, autocomplete='name')
+                div(class='field')
+                    label(for="email") Email
+                    input(type="email", id='email', class='input', placeholder='johndoe@example.com', required, autocomplete='email')
+                div(class='field')
+                    label(for="phone") Phone
+                    input(type="tel", id='phone', class='input', placeholder='+61412345678', required, autocomplete='tel')
+                div(class='field')
+                    label(for="address") Address
+                    input(type="text", id='address', class='input', placeholder='123 Berry St', required, autocomplete='address-line1')
+                div(class='field')
+                    label(for="city") City
+                    input(type="text", id='city', class='input', placeholder='Melbourne', required, autocomplete='address-level2')
+                div(class='field')
+                    label(for="state") State
+                    input(type="text", id='state', class='input', placeholder='VIC', required, autocomplete='address-level1')
+                div(class='field')
+                    label(for="zip") ZIP/Postcode
+                    input(type="text", id='zip', class='input', placeholder='3000', required, autocomplete='postal-code')
+                div(class='field')
+                    label(for="country") Country
+                    select(name="country", required, autocomplete='country-name', id='country')
+                        option(value='US') United States
+                        option(value='CA') Canada
+                        option(value='AU') Australia
+                        option(value='NZ') New Zealand
+                        option(value='UK') United Kingdom
+                
+                div(class='form-row')
+                    label(for='card-element') Credit or debit card
+                    div(id='card-element')
+                    div(id='card-errors', role='alert')
+                button Pay
+
+        div(id='right')
+            img(src=itemImg)
+            p(id='itemname') #{itemName} (size #{itemSize}) - 
+                b $#{itemPrice}.00
+            p(id='shipping') SHIPPING - 
+                b $0.00
+            p(id='total') TOTAL - 
+                b $#{itemPrice}.00 AUD
+            p(style='display:none;', id='itemsize')=itemSize
+    script(src='https://js.stripe.com/v3/')
+    script(src='/javascripts/header.js')
+    script(src='/javascripts/checkout.js')

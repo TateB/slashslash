@@ -1,0 +1,20 @@
+/* header */
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Avenir Next', Helvetica;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+}
+
+#slashtitl {
+    margin-left: 10%;
+    transition: 0.2s all;
+}
+
+#slashtitl:hover {
+    color: #616161;
+    cursor: pointer;
+}

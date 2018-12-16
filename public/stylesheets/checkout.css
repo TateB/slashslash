@@ -1,0 +1,143 @@
+.StripeElement, .input {
+    background-color: white;
+    height: 20px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    width: 90%;
+  }
+
+  .input {
+    margin-bottom: 10px;
+    display: block;
+    width: 90%;
+  }
+  
+  select {
+    background-color: white;
+    height: 40px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    width: 98%;
+    margin-bottom: 10px;
+  }
+
+  label {
+      margin-left: 5px;
+  }
+
+  ::placeholder {
+      color: #ccc;
+  }
+
+  button {
+      width: 98%;
+      height: 40px;
+      background-color: #4A9EF2;
+      border-radius: 4px;
+      margin-top: 10px;
+      font-size: 1.25em;
+      color: white;
+      border: 1px solid transparent;
+      box-shadow: 0 1px 3px 0 #e6ebf1;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+
+    button:hover {
+        background-color: #3F89D4;
+        box-shadow: 0 1px 3px 0 #cfd7df;
+    }
+
+    button:active {
+        background-color: #3774B2;
+    }
+
+
+
+
+
+
+  .StripeElement--focus, .input:focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+  
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+  
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+
+  #left {
+      width: 50%;
+      background-color: #f9f9f9;
+      padding: 40px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+
+  #mainco {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #right {
+      width: 50%;
+      padding: 40px;
+      background-color: #f9f9f9;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      text-align: right;
+  }
+
+  .visible {      
+        opacity: 1;
+  }
+
+
+  img {
+      border-radius: 10px;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+
+    label {
+        margin-left: 0;
+    }
+    
+    .StripeElement, .input {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #mainco {
+        flex-direction: column-reverse;
+        margin-left: -35px;
+        margin-right: 35px;
+        margin-bottom: 30px;
+    }
+
+    #left {
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #right {
+        width: 100%;
+        border-top-left-radius: 20px;
+    }
+
+
+
+  }

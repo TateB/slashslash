@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div(id='typebox')
+    h1(id='type')
+    div(id='buydiv')
+      a(href='/buynow', id='buybutton1', class='buybutton') BUY NOW
+      a(href='/sphere', id='buybutton2', class='buybutton') TEST
+  script(src='https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js')
+  script(src='/javascripts/app.js')

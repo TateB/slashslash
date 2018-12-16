@@ -1,0 +1,90 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Avenir Next', Helvetica;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 12em;
+}
+
+#typebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+#buybutton1 {
+    margin-right: 50px;
+}
+
+.buybutton {
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 20px;
+    margin-top: -50px;
+    font-size: 1.5em; 
+    border-color: black;
+    border-width: 6px;
+    border-style: solid;
+    transition: 0.2s all;
+}
+
+.buybutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.buybutton:active {
+    opacity: 0.5;
+}
+
+
+#buydiv {
+    display: none;
+}
+
+.buydivflex {
+    display: block;
+}
+
+.ti-cursor {
+    transition: 0.2s all;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    h1 {
+        font-size: 5.8em;
+    }
+
+    #typebox {
+        margin-top: 0px;
+    }
+
+    .buybutton {
+        padding: 15px;
+        font-size: 1em;
+        margin-top: 0px;
+        width: 70%;
+    }
+
+    #buybutton1 {
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+    .buydivflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+  }

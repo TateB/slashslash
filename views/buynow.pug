@@ -1,0 +1,19 @@
+extends header
+
+block content
+    link(rel='stylesheet', href='/stylesheets/buynowa.css')
+    div(id='itembox')
+        p(id='itemname')=itemName
+        p(id='itemcategory')=itemCategory
+        img(src=itemImg)
+        div(id='itemsizing')
+            p(onclick='getClass("s");', id='ss') S
+            p(class='selected', onclick='getClass("m");', id='mm') M
+            p(onclick='getClass("l");', id='ll') L
+        p(id='itemprice') $#{itemPrice}
+        p(id='shiptime') SHIPS IN FEBRUARY
+        a(id='buybutton' href='/buypage?size=m') BUY NOW
+    script(src='/javascripts/header.js')
+    script(src='/javascripts/buynow.js')
+
+    

@@ -1,0 +1,14 @@
+h2 {
+    text-align: center;
+    color: #22e86b;
+}
+
+img {
+    height: 200px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
