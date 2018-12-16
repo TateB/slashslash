@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var stripe = require("stripe")("sk_test_UE4MlJpajPtfnvdRVy0Ej2i3");
+var stripe = require("stripe")("sk_live_4OBXikjnchtcU4r9tiZ3zpJR");
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 
@@ -9,9 +9,9 @@ const db = low(adapter)
 
 function checkTime() {
   if (Math.round(((new Date()).getTime() / 1000 - 1546300800) * -1 ) < 1) {
-    return true;
-  } else {
     return false;
+  } else {
+    return true;
   }
 };
 

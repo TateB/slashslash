@@ -1,6 +1,6 @@
 {
   "name": "slashslash",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -14,5 +14,17 @@
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11",
     "stripe": "^6.19.0"
-  }
+  },
+  "description": "slashslash",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TateB/slashslash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TateB/slashslash/issues"
+  },
+  "homepage": "https://github.com/TateB/slashslash#readme"
 }
