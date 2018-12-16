@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-var stripe = require("stripe")("sk_test_UE4MlJpajPtfnvdRVy0Ej2i3");
+var stripe = require("stripe")("sk_live_4OBXikjnchtcU4r9tiZ3zpJR");
 const endpointSecret = 'whsec_8uHkNzwh4tUhFAnMJ8Q5jH0ZFHZrQ7v4';
 
 var indexRouter = require('./routes/index');

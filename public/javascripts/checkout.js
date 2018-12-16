@@ -1,4 +1,4 @@
-var stripe = Stripe('pk_test_ARcKUxTOUW0dvXHTQ7M3aEUG');
+var stripe = Stripe('pk_live_u5yYig4QNUpdqHuAp70TffB5');
 var elements = stripe.elements({
     locale: 'auto'
 });
