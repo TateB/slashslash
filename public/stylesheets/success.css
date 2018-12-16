@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/fonts/AvenirNext-BoldItalic.woff2') format('woff2'),
+        url('/fonts/AvenirNext-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/fonts/AvenirNext-Bold.woff2') format('woff2'),
+        url('/fonts/AvenirNext-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('/fonts/AvenirNext-Regular.woff2') format('woff2'),
+        url('/fonts/AvenirNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 h2 {
     text-align: center;
     color: #22e86b;
