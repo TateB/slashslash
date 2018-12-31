@@ -16,7 +16,7 @@ function checkTime() {
 };
 
 function isSoldOut() {
-  if (db.get('shapes').value() < 50) {
+  if (db.get('shapes').value() < 10) {
     return false;
   } else {
     return true;
@@ -31,7 +31,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/buynow', function(req, res, next) {
   if (checkTime() == false) {
-    res.render('buynow', { itemName: 'SHAPES', itemImg: '/images/blackbox.jpeg', 'itemPrice': 80.00, itemCategory: 't-shirt' });
+    res.render('buynow', { itemName: 'SHAPES', itemImg: '/images/shirt.png', 'itemPrice': 65.00, itemCategory: 't-shirt' });
   } else {
     res.render('soon');
   }
@@ -44,7 +44,7 @@ router.get('/sphere', function(req, res, next) {
 router.get('/buypage', function(req, res, next) {
   if (checkTime() == false) {
     if (req.param('size') == 's' || req.param('size') == 'm' || req.param('size') == 'l') {
-      res.render('checkout', { itemSize: req.param('size'), itemName: 'SHAPES T-SHIRT', itemImg: '/images/blackbox.jpeg', 'itemPrice': 80.00 });
+      res.render('checkout', { itemSize: req.param('size'), itemName: 'SHAPES T-SHIRT', itemImg: '/images/shirt.png', 'itemPrice': 65.00 });
     } else {
       res.render('error');
     }
@@ -58,7 +58,7 @@ router.post('/charge', function(req, res, next) {
       res.redirect('/soldout');
     }
     const charge = stripe.charges.create({
-      amount: 8000,
+      amount: 6500,
       currency: 'aud',
       description: 'SHAPES T-SHIRT size ' + req.body.size,
       source: req.body.stripeToken,
